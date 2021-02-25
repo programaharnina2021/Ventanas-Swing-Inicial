@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import javax.swing.JTextArea;
 import javax.swing.JComboBox;
+import java.awt.Toolkit;
 
 public class BorderUno04 extends JFrame {
 
@@ -37,6 +38,7 @@ public class BorderUno04 extends JFrame {
 	 * Create the frame.
 	 */
 	public BorderUno04() {
+		setIconImage(Toolkit.getDefaultToolkit().getImage(BorderUno04.class.getResource("/javax/swing/plaf/metal/icons/Error.gif")));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
